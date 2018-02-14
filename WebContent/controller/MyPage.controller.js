@@ -1,4 +1,4 @@
-sap.ui.controller("view.MyPage", {
+sap.ui.controller("smax.batch27.A1.controller.MyPage", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -34,5 +34,10 @@ sap.ui.controller("view.MyPage", {
 //	onExit: function() {
 //
 //	}
+	
+	onPress : function(){
+		// get the router
+		this.getOwnerComponent().getRouter().navTo("detailPage");
+	}
 
 });
