@@ -1,13 +1,17 @@
-sap.ui.controller("smax.batch27.A1.controller.MyPage", {
+sap.ui.controller("smax.batch27.A1.controller.ProductList", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf view.MyPage
 */
-//	onInit: function() {
-//
-//	},
+	onInit: function() {
+		
+		/*var serviceURL = "proxy/http/122.180.87.238:8000/sap/opu/odata/SAP/ZGW_BATCH27_PRODUCT_SRV_01/"
+		var oModel = new sap.ui.model.odata.v2.ODataModel(serviceURL);
+		this.getView().setModel(oModel);
+*/
+	},
 
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
