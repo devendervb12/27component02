@@ -2,7 +2,15 @@
 	controllerName="smax.batch27.A1.controller.ProductDetails"	 xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Detail Page">
 		<content>
-	          <Button text="Go to Page1" press="onPress"/>
+		<VBox>
+		  <items>
+		       <Text text="{ProductID}"/>
+			   <Text text="{Name}"/>
+			   
+		  </items>
+		</VBox>
+		
+	          
 		</content>
 	</Page>
 </core:View>

@@ -5,7 +5,9 @@
 		<content>
 	        <List items="{/ProductSet}">
 	          <items>
-	             <StandardListItem title="{ProductID}" description="{Name}"/>
+	             <StandardListItem title="{ProductID}" description="{Name}"
+	             type="Active" press="onItemSelection"
+	             />
 	          </items>
 	        </List>
 		</content>

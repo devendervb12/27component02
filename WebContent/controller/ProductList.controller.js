@@ -7,10 +7,7 @@ sap.ui.controller("smax.batch27.A1.controller.ProductList", {
 */
 	onInit: function() {
 		
-		/*var serviceURL = "proxy/http/122.180.87.238:8000/sap/opu/odata/SAP/ZGW_BATCH27_PRODUCT_SRV_01/"
-		var oModel = new sap.ui.model.odata.v2.ODataModel(serviceURL);
-		this.getView().setModel(oModel);
-*/
+	
 	},
 
 /**
@@ -42,6 +39,10 @@ sap.ui.controller("smax.batch27.A1.controller.ProductList", {
 	onPress : function(){
 		// get the router
 		this.getOwnerComponent().getRouter().navTo("detailPage");
+	},
+	onItemSelection : function(){
+		
+		this.getOwnerComponent().getRouter().navTo("detailPage", {prodID : "HT-1000"});
 	}
 
 });

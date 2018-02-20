@@ -31,7 +31,7 @@
                    "viewName" : "ProductList"                   
                    },
                    {
-                    "pattern" : "toDetail",
+                    "pattern" : "toDetail/{prodID}",
                     "name" : "detailPage",
                     "viewName" : "ProductDetails"                    
                    }

@@ -5,10 +5,22 @@ sap.ui.controller("smax.batch27.A1.controller.ProductDetails", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf view.ProductDetails
 */
-//	onInit: function() {
-//
-//	},
-
+	onInit: function() {
+           // get the data from router
+	     this._oRouter = this.getOwnerComponent().getRouter();
+	     
+	     
+	     var oController = this;
+	     
+	     this._oRouter.getRoute("detailPage").attachPatternMatched(function(oEvent){
+	    		//	debugger;
+	 		var productID = oEvent.getParameters().arguments.prodID;
+	 		
+	 		oController.getView().bindElement("/ProductSet('"+productID+"')");
+	 	});
+		
+	},
+	
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).
